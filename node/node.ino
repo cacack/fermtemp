@@ -41,7 +41,7 @@ DallasTemperature sensors( &oneWire );
 // See the tutorial on how to obtain these addresses:
 // http://www.hacktronics.com/Tutorials/arduino-1-wire-address-finder.html
 
-DeviceAddress Probe01 = { 0x28, 0xFF, 0x79, 0x92, 0x3E, 0x04, 0x00, 0x21 }; 
+DeviceAddress Probe01 = { 0x28, 0xFF, 0x7D, 0xBF, 0x3C, 0x04, 0x00, 0x9C }; 
 
 
 void setup() {
