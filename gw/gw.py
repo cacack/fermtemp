@@ -15,7 +15,16 @@ def sig_SIGINT( signal, frame ):
 # Trap interrupt signal.
 signal.signal( signal.SIGINT, sig_SIGINT )
 
-influxdb = InfluxDBClient('skywalker', 8086, 'root', 'root', 'fermtemp')
+beername = 'hope&king'
+
+influx_host = 'influx.theclonchs.com'
+influx_user = 'brew'
+influx_pass = 'brew'
+influx_db = 'brewery'
+
+seriesbase = beername + '.fermentation'
+
+influxdb = InfluxDBClient( influx_host, 8086, influx_user, influx_pass, influx_db )
 arduino = serial.Serial( '/dev/ttyACM0', 115200 )
 
 print "Reseting Arduino.."
