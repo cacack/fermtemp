@@ -1,6 +1,6 @@
 #!/usr/bin/env python2
 
-from influxdb import InfluxDBClient
+from influxdb.influxdb08 import InfluxDBClient
 import json
 import serial
 import signal
